@@ -1,0 +1,94 @@
+@startuml
+
+interface Map {
+    get()
+    put()
+}
+interface ConcurrentMap
+interface Queue{
+    add()
+    offer()
+    element()
+    peek()
+    poll()
+    remove()
+}
+interface Deque{
+    addFirst()
+    addLast()
+    getFirst()
+    getLast()
+}
+interface BlockingQueue
+interface BlockingDeque
+class ConcurrentHashMap
+class ArrayBlockingQueue
+class ConcurrentLinkedDeque
+class ConcurrentLinkedQueue
+class ConcurrentNavigableMap
+class ConcurrentSkipListMap
+class ConcurrentSkipListSet
+class CopyOnWriteArrayList
+class CopyOnWriteArraySet
+class DelayQueue
+class LinkedBlockingDeque
+class LinkedBlockingQueue
+class LinkedTransferQueue
+class PriorityBlockingQueue
+class SynchronousQueue
+class TransferQueue
+
+Queue <|-- BlockingQueue
+Map <|-- ConcurrentMap
+Map <|-- AbstractMap
+AbstractMap <|.. ConcurrentHashMap
+ConcurrentMap <|.. ConcurrentHashMap
+
+AbstractQueue <|-- ArrayBlockingQueue
+BlockingQueue <|-- ArrayBlockingQueue
+Deque <|-- BlockingDeque
+BlockingQueue <|-- BlockingDeque
+
+AbstractCollection <|-- ConcurrentLinkedDeque
+Deque <|-- ConcurrentLinkedDeque
+Queue <|-- Deque
+
+AbstractQueue <|-- ConcurrentLinkedQueue
+Queue <|-- ConcurrentLinkedQueue
+
+ConcurrentMap<|--ConcurrentNavigableMap
+NavigableMap<|--ConcurrentNavigableMap
+
+AbstractMap <|--ConcurrentSkipListMap
+ConcurrentNavigableMap <|--ConcurrentSkipListMap
+'Cloneable <|--ConcurrentSkipListMap
+
+AbstractSet <|-- ConcurrentSkipListSet
+NavigableSet <|-- ConcurrentSkipListSet
+'Cloneable <|-- ConcurrentSkipListSet
+
+List<|--CopyOnWriteArrayList
+RandomAccess <|--CopyOnWriteArrayList
+'Cloneable<|--CopyOnWriteArrayList
+
+AbstractSet <|-- CopyOnWriteArraySet
+
+AbstractQueue<|-- DelayQueue
+BlockingQueue <|-- DelayQueue
+
+AbstractQueue <|-- LinkedBlockingDeque
+BlockingDeque <|-- LinkedBlockingDeque
+
+AbstractQueue <|-- LinkedBlockingQueue
+BlockingQueue <|-- LinkedBlockingQueue
+
+AbstractQueue <|-- LinkedTransferQueue
+TransferQueue <|-- LinkedTransferQueue
+
+AbstractQueue <|-- PriorityBlockingQueue
+BlockingQueue <|-- PriorityBlockingQueue
+
+AbstractQueue <|-- SynchronousQueue
+BlockingQueue <|-- SynchronousQueue
+BlockingQueue <|-- TransferQueue
+@enduml

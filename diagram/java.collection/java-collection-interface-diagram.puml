@@ -1,0 +1,17 @@
+@startuml Java Collection Interface Diagram
+interface Iterable{
+    iterator()
+}
+
+interface Collection{}
+interface BlockingDeque{}
+interface BlockingQueue{}
+interface Deque{}
+interface List{}
+interface NavigableSet{}
+interface Queue{}
+interface Set{}
+interface SortedSet{}
+interface TransferQueue{}
+
+@enduml

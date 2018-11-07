@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="我工作中主要用到Java、Shell，以及后来由于工作需要不得不用的JavaScript，偶尔也会用到Python处理一些脚本性的东西。 在开发的时候，听说过Google style之后，都会将tab制表符换成两个空格，这个对我来说已成惯例。   IDE– Intellij Idea 文本编辑器  – Vim、Atom Shell – iTerm2、zsh、mtux、Solarized Dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编程工具及插件">
+<meta property="og:url" content="http://wangtingbang.github.io/2015/09/25/programing-tool-list/index.html">
+<meta property="og:site_name" content="梦里键指如飞">
+<meta property="og:description" content="我工作中主要用到Java、Shell，以及后来由于工作需要不得不用的JavaScript，偶尔也会用到Python处理一些脚本性的东西。 在开发的时候，听说过Google style之后，都会将tab制表符换成两个空格，这个对我来说已成惯例。   IDE– Intellij Idea 文本编辑器  – Vim、Atom Shell – iTerm2、zsh、mtux、Solarized Dark">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-06T15:57:06.269Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="编程工具及插件">
+<meta name="twitter:description" content="我工作中主要用到Java、Shell，以及后来由于工作需要不得不用的JavaScript，偶尔也会用到Python处理一些脚本性的东西。 在开发的时候，听说过Google style之后，都会将tab制表符换成两个空格，这个对我来说已成惯例。   IDE– Intellij Idea 文本编辑器  – Vim、Atom Shell – iTerm2、zsh、mtux、Solarized Dark">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://wangtingbang.github.io/2015/09/25/programing-tool-list/">
+
+
+
+
+
+  <title>编程工具及插件 | 梦里键指如飞</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">梦里键指如飞</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">规格严格，功夫到家</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wangtingbang.github.io/2015/09/25/programing-tool-list/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wang Tingbang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/css/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梦里键指如飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">编程工具及插件</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-09-25T14:25:49+08:00">
+                2015-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>我工作中主要用到Java、Shell，以及后来由于工作需要不得不用的JavaScript，偶尔也会用到Python处理一些脚本性的东西。</p>
+<p>在开发的时候，听说过Google style之后，都会将tab制表符换成两个空格，这个对我来说已成惯例。</p>
+<blockquote>
+<ol>
+<li>IDE– Intellij Idea</li>
+<li>文本编辑器  – Vim、Atom</li>
+<li>Shell – iTerm2、zsh、mtux、Solarized Dark</li>
+<li>Git – git命令行、Github Desktop/SourceTree</li>
+<li>编程字体 – SourceCodePro、mplus(m+)、Anonymous Pro</li>
+</ol>
+</blockquote>
+<h2 id="IDE-–-IntelliJ-Idea"><a href="#IDE-–-IntelliJ-Idea" class="headerlink" title="IDE – IntelliJ Idea"></a>IDE – IntelliJ Idea</h2><p>原先是用Eclipse JavaEE版本的，用的时候感觉加载不必要的插件太慢，后来听说Idea后改用了一下，确实挺不错的。<br>不管是在代码提示、处理性能方面，都比Eclipse要好一些。这是由于Idea后台会运行一些线程做一些工作，将顿卡的问题在后台处理掉，不过这个也有弊端，就是机器发热比较大。</p>
+<p>Idea的上手成本可能有点高，他大部分快捷键是Mac风格，跟Eclipse还是有比较大的差异的，不过习惯之后确实非常好用。</p>
+<p>Idea有社区版、收费的Ultimate版本，还有教育版本。</p>
+<h2 id="文本编辑器-–-Vim-MacVim-、Atom"><a href="#文本编辑器-–-Vim-MacVim-、Atom" class="headerlink" title="文本编辑器 – Vim(MacVim)、Atom"></a>文本编辑器 – Vim(MacVim)、Atom</h2><h3 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h3><p>在接触Vim之后确实恋上了，这个不用多说，大家都知道。用Solarized Dark主题，没有装太多的插件，因为我一般主要是用来处理一些文本的东西，看看日志之类的。</p>
+<h3 id="Atom"><a href="#Atom" class="headerlink" title="Atom"></a>Atom</h3><p>github旗下的Atom确实很让人喜欢，之前比较喜欢Sublime Text，但在接触Atom之后，就对这个编辑器爱不释手。以Node为核心，完全的一个Web应用但能以App的形式运行，确实让人惊奇。</p>
+<h4 id="Atom让我喜欢的地方"><a href="#Atom让我喜欢的地方" class="headerlink" title="Atom让我喜欢的地方"></a>Atom让我喜欢的地方</h4><blockquote>
+<ol>
+<li>界面<br>我是一个喜欢游戏的人，在游戏的载入画面中如果有一些技巧、提示之类的东西，会让我对这个游戏有更好的认同感。<br>Atom就是这样一个东西，当你把所有Tab页关掉之后，他有一人各种功能、快捷键的提示。</li>
+<li>快捷键<br>Atom快捷键跟我用的其他工具比较接近，用起来感觉顺手一些。这是个见仁见智的问题了吧。</li>
+<li>代码提示<br>这个功能确实很爽，在不需要装太多插件的前提下就能实现。<br>在之前某处代码有命名一个变量的话，在后续编码过程中只要输入不超过3个字母就能提示这个变量，这确实很吸引我种不喜欢一个字一个字码代码的人。</li>
+</ol>
+</blockquote>
+<h4 id="我的Atom插件"><a href="#我的Atom插件" class="headerlink" title="我的Atom插件"></a>我的Atom插件</h4><blockquote>
+<ol>
+<li>VIM-Mode<br>像vim一样实现键盘控制，不过目前这个插件还不支持命令模式，经常输入:w发现没有效果。</li>
+<li>markdown-preview-plus<br>用来写blog， ctrl+shift+m打开，挺好用的，即时查看。<br>缺点就是不能移出去，对于我13寸的屏幕来说确实有点拥挤。</li>
+</ol>
+</blockquote>
+<h2 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h2><h3 id="终端-iTerm2"><a href="#终端-iTerm2" class="headerlink" title="终端 - iTerm2"></a>终端 - iTerm2</h3><p>嗯，这个有什么好的，目前我也还没有体会到，只是当初在网上找的时候发现很多人都说这个错，配合mtux+zsh是神器之类的，所以就开始用了。目前发现确实还是挺好用的，比默认的Terminal之类的要方便一些，毕竟有一些快捷键和功能确实挺不错。</p>
+<h3 id="Shell-zsh"><a href="#Shell-zsh" class="headerlink" title="Shell - zsh"></a>Shell - zsh</h3><p>以前接触Linx的时候只知道bash，后来找终端的时候看到有人介绍说zsh是很多程序员用必备的一个东西。<br>等到真正下下来安装完用了一段时间之后，确实感觉离不开了。</p>
+<blockquote>
+<ol>
+<li>现成的主题，在github上有很多。只要将主题放到 ~/.oh-my-zsh/themes下之后，在 ~/.zshrc中配置一下就可以。不仅有对于git分支的显示，还有靓丽的色彩。<br>我的主题配置如下：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ZSH_THEME=<span class="string">"robbyrussell"</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>对于git的集成。只要进入到git工程目录下，就会有对于git的各种命令行上的提示，比如这种：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">➜  /Users/wangtingbang/prog/git-work/wangtingbang.github.io git:(master) ✗</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li>tab 党的福音<br>像对于各种目录，命令之类，不再需要从第一个字母开始输入，通过输入的几个字符，zsh就能自动匹配到目录、命令，如果有多个目录，多次按tab选定之后回车就行，甚至只要输入一个目录，回车一下就可以进入。</li>
+</ol>
+</blockquote>
+<h3 id="mtux"><a href="#mtux" class="headerlink" title="mtux"></a>mtux</h3><p>目前没有感觉到哪有什么好处，对于这个我用得不太多。（感觉自己有点low）</p>
+<h3 id="Solarized-Dark主题"><a href="#Solarized-Dark主题" class="headerlink" title="Solarized Dark主题"></a>Solarized Dark主题</h3><p>对于经常熬夜干活的人来说，这个暗色的主题还是挺不错的。</p>
+<h2 id="代码管理-–-git"><a href="#代码管理-–-git" class="headerlink" title="代码管理 – git"></a>代码管理 – git</h2><p>用命令行的git基本就已经够用，但是命令行的git在版本对比功能（diff）上个人不太习惯，很多时候要借助于Github Desktop或者SourceTree</p>
+<p>自己常用的代码管理过程中的git命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#用于clone远程代码库</span></span><br><span class="line">git <span class="built_in">clone</span> <span class="variable">$URL</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##-----更新代码Start----</span></span><br><span class="line"><span class="comment">#在很多文章甚于于git的各种代码的README中都能看到更新代码用git pull</span></span><br><span class="line"><span class="comment">#但pull的方式个人不习惯于用</span></span><br><span class="line"><span class="comment">#原因是刚开始用的时候这个命令把我自己本地的修改给覆盖了</span></span><br><span class="line"><span class="comment">#将远程代码取到本地，但不会更新到本地代码中</span></span><br><span class="line">git fetch</span><br><span class="line"></span><br><span class="line"><span class="comment">#-----将自己代码暂存----</span></span><br><span class="line">git stash</span><br><span class="line"></span><br><span class="line"><span class="comment">#rebase，将fetch下来的代码更新到本地，实际上是变了本地代码的头指针</span></span><br><span class="line">git rebase origin/<span class="variable">$BRANCH</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#将本地暂存的代码取出来，可能出来以后会发现有很多冲突(confilits)</span></span><br><span class="line">git stash pop</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">##----代码维护----</span></span><br><span class="line"><span class="comment">#简单地查看变更记录</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#对比本地文件FILE与代码库中的变更，一般用于自己修改过这个文件之类</span></span><br><span class="line">git diff -- <span class="variable">$FILE</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#代码冲突解决，或者自己误添加文件到提交中的后，这个用于解决冲突和恢复</span></span><br><span class="line">git reset HEAD <span class="variable">$FILE</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">##----代码提交----</span></span><br><span class="line"><span class="comment">#添加一个文件到提交中，也可以直接用git add . 这种比较暴力的方式把所有文件添加</span></span><br><span class="line">git add <span class="variable">$FILE</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交代码，这个提交只会保留在本地的git库中</span></span><br><span class="line">git commit -m <span class="string">"message"</span>  </span><br><span class="line"></span><br><span class="line"><span class="comment">#推送代码到远程服务器的BRANCH分支</span></span><br><span class="line">git push origin HEAD:refs/heads/<span class="variable">$BRANCH</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#也可以用这种方式推送代码</span></span><br><span class="line">git push origin <span class="variable">$BRANCH</span> <span class="comment">#也可以用这种方式推送代码</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#当远程分支开启的code review之后以这种方式提交</span></span><br><span class="line">git push origin HEAD:refs/<span class="keyword">for</span>/<span class="variable">$BRANCH</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="编程字体"><a href="#编程字体" class="headerlink" title="编程字体"></a>编程字体</h2><h3 id="SourceCodePro"><a href="#SourceCodePro" class="headerlink" title="SourceCodePro"></a>SourceCodePro</h3><p>  在IDE、iTerm2、vim还是Atom中都有很不错的表现。</p>
+<h3 id="mplus-m"><a href="#mplus-m" class="headerlink" title="mplus(m+)"></a>mplus(m+)</h3><p>  我主要在iTerm2中用，一行中能够显示比较多的字，这个字体的c、p、2c、2p等好多种，从细到粗都有，并且每一种的样式都有比较大的区别。适合在终端中使用，看日志、对比文件之类的时候非常好用。</p>
+<h3 id="Anonymous-Pro"><a href="#Anonymous-Pro" class="headerlink" title="Anonymous Pro"></a>Anonymous Pro</h3><p>以前在Eclipse中用，字体整体比较细，略有尖锐的感觉，看上去比较显眼。</p>
+<p>=============== 以下无正文 ==============</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/06/java-concurrent-brief/" rel="prev" title="Java并发编程概要">
+                Java并发编程概要 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/css/images/avatar.png" alt="Wang Tingbang">
+            
+              <p class="site-author-name" itemprop="name">Wang Tingbang</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#IDE-–-IntelliJ-Idea"><span class="nav-number">1.</span> <span class="nav-text">IDE – IntelliJ Idea</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本编辑器-–-Vim-MacVim-、Atom"><span class="nav-number">2.</span> <span class="nav-text">文本编辑器 – Vim(MacVim)、Atom</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Vim"><span class="nav-number">2.1.</span> <span class="nav-text">Vim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Atom"><span class="nav-number">2.2.</span> <span class="nav-text">Atom</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Atom让我喜欢的地方"><span class="nav-number">2.2.1.</span> <span class="nav-text">Atom让我喜欢的地方</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#我的Atom插件"><span class="nav-number">2.2.2.</span> <span class="nav-text">我的Atom插件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shell"><span class="nav-number">3.</span> <span class="nav-text">Shell</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#终端-iTerm2"><span class="nav-number">3.1.</span> <span class="nav-text">终端 - iTerm2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell-zsh"><span class="nav-number">3.2.</span> <span class="nav-text">Shell - zsh</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mtux"><span class="nav-number">3.3.</span> <span class="nav-text">mtux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Solarized-Dark主题"><span class="nav-number">3.4.</span> <span class="nav-text">Solarized Dark主题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码管理-–-git"><span class="nav-number">4.</span> <span class="nav-text">代码管理 – git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编程字体"><span class="nav-number">5.</span> <span class="nav-text">编程字体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SourceCodePro"><span class="nav-number">5.1.</span> <span class="nav-text">SourceCodePro</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mplus-m"><span class="nav-number">5.2.</span> <span class="nav-text">mplus(m+)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Anonymous-Pro"><span class="nav-number">5.3.</span> <span class="nav-text">Anonymous Pro</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wang Tingbang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

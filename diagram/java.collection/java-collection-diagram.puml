@@ -1,0 +1,34 @@
+@startuml 
+
+class AbstractCollection{}
+class AbstractList{}
+class AbstractQueue{}
+class AbstractSequentialList{}
+class AbstractSet{}
+class ArrayBlockingQueue{}
+class ArrayDeque{}
+class ArrayList{}
+class AttributeList{}
+class ConcurrentHashMap.KeySetView{}
+class ConcurrentLinkedDeque{}
+class ConcurrentLinkedQueue{}
+class ConcurrentSkipListSet{}
+class CopyOnWriteArrayList{}
+class CopyOnWriteArraySet{}
+class DelayQueue{}
+class EnumSet{}
+class HashSet{}
+class JobStateReasons{}
+class LinkedBlockingDeque{}
+class LinkedBlockingQueue{}
+class LinkedHashSet{}
+class LinkedList{}
+class LinkedTransferQueue{}
+class PriorityBlockingQueue{}
+class PriorityQueue{}
+class Stack{}
+class SynchronousQueue{}
+class TreeSet{}
+class Vector{}
+
+@enduml
