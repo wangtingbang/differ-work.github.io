@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="梦里键指如飞">
-<meta property="og:url" content="http://differ-work.github.io/index.html">
+<meta name="description" content="我工作中主要用到Java、Shell，以及后来由于工作需要不得不用的JavaScript，偶尔也会用到Python处理一些脚本性的东西。 在开发的时候，听说过Google style之后，都会将tab制表符换成两个空格，这个对我来说已成惯例。   IDE– Intellij Idea 文本编辑器  – Vim、Atom Shell – iTerm2、zsh、mtux、Solarized Dark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编程工具及插件">
+<meta property="og:url" content="http://differ-work.github.io/programing-tool-list/index.html">
 <meta property="og:site_name" content="梦里键指如飞">
+<meta property="og:description" content="我工作中主要用到Java、Shell，以及后来由于工作需要不得不用的JavaScript，偶尔也会用到Python处理一些脚本性的东西。 在开发的时候，听说过Google style之后，都会将tab制表符换成两个空格，这个对我来说已成惯例。   IDE– Intellij Idea 文本编辑器  – Vim、Atom Shell – iTerm2、zsh、mtux、Solarized Dark">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-06T15:57:06.269Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="梦里键指如飞">
+<meta name="twitter:title" content="编程工具及插件">
+<meta name="twitter:description" content="我工作中主要用到Java、Shell，以及后来由于工作需要不得不用的JavaScript，偶尔也会用到Python处理一些脚本性的东西。 在开发的时候，听说过Google style之后，都会将tab制表符换成两个空格，这个对我来说已成惯例。   IDE– Intellij Idea 文本编辑器  – Vim、Atom Shell – iTerm2、zsh、mtux、Solarized Dark">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://differ-work.github.io/">
+  <link rel="canonical" href="http://differ-work.github.io/programing-tool-list/">
 
 
 
 
 
-  <title>梦里键指如飞</title>
+  <title>编程工具及插件 | 梦里键指如飞</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -214,400 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://differ-work.github.io/spring-boot-start-flow-base-v1-5-4/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sigh differ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/css/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="梦里键指如飞">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/spring-boot-start-flow-base-v1-5-4/" itemprop="url">springboot应用启动过程分析(基于springboot 1.5.4)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-08T00:01:27+08:00">
-                2018-11-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p>springboot程序通过<code>SpringBootApplication</code>注解和Runner类中入口方法<code>main</code>执行<code>SpringApplication.run()</code>就可以执行起来，如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		SpringApplication.run(DemoApplication.class, args);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="内部代码分析"><a href="#内部代码分析" class="headerlink" title="内部代码分析"></a>内部代码分析</h2><p>通过DemoApplication <code>main</code>方法进入之后，过掉各种中间多态或抽象的过程，主要包括两个方法: <code>initializer</code>和<code>run</code></p>
-<p>在启动过程中的各种Spring context和bean的配置，主要在spring-boot的 META-INF/spring.factories文件中</p>
-<blockquote>
-<p> META-INF中这个文件也是开发springboot插件的一个方式</p>
-</blockquote>
-<h3 id="initializer方法"><a href="#initializer方法" class="headerlink" title="initializer方法"></a>initializer方法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SuppressWarnings</span>(&#123; <span class="string">"unchecked"</span>, <span class="string">"rawtypes"</span> &#125;)</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">initialize</span><span class="params">(Object[] sources)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (sources != <span class="keyword">null</span> &amp;&amp; sources.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">		<span class="keyword">this</span>.sources.addAll(Arrays.asList(sources));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">this</span>.webEnvironment = deduceWebEnvironment();</span><br><span class="line">	setInitializers((Collection) getSpringFactoriesInstances(</span><br><span class="line">			ApplicationContextInitializer.class));</span><br><span class="line">	setListeners((Collection) getSpringFactoriesInstances(ApplicationListener.class));</span><br><span class="line">	<span class="keyword">this</span>.mainApplicationClass = deduceMainApplicationClass();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>主要包含如下几个过程：</p>
-<blockquote>
-<ol>
-<li>判断是否为web环境</li>
-<li>设置初始化类(initializers, springboot 封装的 spring-context中的ApplicationContext列表)</li>
-<li>设置监听器(listeners, spring封装的spring-context中的ApplicationListener列表)</li>
-</ol>
-</blockquote>
-<h4 id="webEnvironment的过程"><a href="#webEnvironment的过程" class="headerlink" title="webEnvironment的过程"></a>webEnvironment的过程</h4><p>判断是否为web环境，主要是看有没有加载<code>javax.servlet.Servlet</code> 和 <code>org.springframework.web.context.ConfigurableWebApplicationContext</code>相关的类<br>另外，在DemoApplication的main方法中手动设置webEnvironment也会直接生效,如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    SpringApplication application = <span class="keyword">new</span> SpringApplication(DemoApplication.class);</span><br><span class="line">    application.setWebEnvironment(<span class="keyword">false</span>);</span><br><span class="line">    application.run(args);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="设置初始化类"><a href="#设置初始化类" class="headerlink" title="设置初始化类"></a>设置初始化类</h4><p>设置初始化类是通过SpringApplication中的方法<code>getSpringFactoriesInstances()</code>,参数为 <code>ApplicationContextInitializer.class</code></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> &lt;T&gt; Collection&lt;? extends T&gt; getSpringFactoriesInstances(Class&lt;T&gt; type,</span><br><span class="line">		Class&lt;?&gt;[] parameterTypes, Object... args) &#123;</span><br><span class="line">	ClassLoader classLoader = Thread.currentThread().getContextClassLoader();</span><br><span class="line">	<span class="comment">// Use names and ensure unique to protect against duplicates</span></span><br><span class="line">	Set&lt;String&gt; names = <span class="keyword">new</span> LinkedHashSet&lt;String&gt;(</span><br><span class="line">			SpringFactoriesLoader.loadFactoryNames(type, classLoader));</span><br><span class="line">	List&lt;T&gt; instances = createSpringFactoriesInstances(type, parameterTypes,</span><br><span class="line">			classLoader, args, names);</span><br><span class="line">	AnnotationAwareOrderComparator.sort(instances);</span><br><span class="line">	<span class="keyword">return</span> instances;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><code>SpringFactoriesLoader.loadFactoryNames</code>方法，获取了spring-boot包下的<code>META-INF/spring.factories</code>中的ApplicationListeners，主要包括:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">org.springframework.boot.ClearCachesApplicationListener</span><br><span class="line">org.springframework.boot.builder.ParentContextCloserApplicationListener</span><br><span class="line">org.springframework.boot.context.FileEncodingApplicationListener</span><br><span class="line">org.springframework.boot.context.config.AnsiOutputApplicationListener</span><br><span class="line">org.springframework.boot.context.config.ConfigFileApplicationListener</span><br><span class="line">org.springframework.boot.context.config.DelegatingApplicationListener</span><br><span class="line">org.springframework.boot.liquibase.LiquibaseServiceLocatorApplicationListener</span><br><span class="line">org.springframework.boot.logging.ClasspathLoggingApplicationListener</span><br><span class="line">org.springframework.boot.logging.LoggingApplicationListener</span><br></pre></td></tr></table></figure></p>
-<p>//TODO  </p>
-<h3 id="run方法"><a href="#run方法" class="headerlink" title="run方法"></a>run方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">public ConfigurableApplicationContext run(String... args) &#123;</span><br><span class="line">	StopWatch stopWatch = new StopWatch();</span><br><span class="line">	stopWatch.start();</span><br><span class="line">	ConfigurableApplicationContext context = null;</span><br><span class="line">	FailureAnalyzers analyzers = null;</span><br><span class="line">	configureHeadlessProperty();</span><br><span class="line">	SpringApplicationRunListeners listeners = getRunListeners(args);</span><br><span class="line">	listeners.starting();</span><br><span class="line">	try &#123;</span><br><span class="line">		ApplicationArguments applicationArguments = new DefaultApplicationArguments(</span><br><span class="line">				args);</span><br><span class="line">		ConfigurableEnvironment environment = prepareEnvironment(listeners,</span><br><span class="line">				applicationArguments);</span><br><span class="line">		Banner printedBanner = printBanner(environment);</span><br><span class="line">		context = createApplicationContext();</span><br><span class="line">		analyzers = new FailureAnalyzers(context);</span><br><span class="line">		prepareContext(context, environment, listeners, applicationArguments,</span><br><span class="line">				printedBanner);</span><br><span class="line">		refreshContext(context);</span><br><span class="line">		afterRefresh(context, applicationArguments);</span><br><span class="line">		listeners.finished(context, null);</span><br><span class="line">		stopWatch.stop();</span><br><span class="line">		if (this.logStartupInfo) &#123;</span><br><span class="line">			new StartupInfoLogger(this.mainApplicationClass)</span><br><span class="line">					.logStarted(getApplicationLog(), stopWatch);</span><br><span class="line">		&#125;</span><br><span class="line">		return context;</span><br><span class="line">	&#125;</span><br><span class="line">	catch (Throwable ex) &#123;</span><br><span class="line">		handleRunFailure(context, listeners, analyzers, ex);</span><br><span class="line">		throw new IllegalStateException(ex);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>========  未完待续  =========</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://differ-work.github.io/java-concurrent-brief/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sigh differ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/css/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="梦里键指如飞">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/java-concurrent-brief/" itemprop="url">Java并发编程概要</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-06T23:55:10+08:00">
-                2018-11-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Java并发编程主要用到java.util.concurrent包下的类，主要结构如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">java.util.concurrent</span><br><span class="line">                |----atomic</span><br><span class="line">                |----locks</span><br><span class="line">                |----各种类</span><br></pre></td></tr></table></figure></p>
-<p>如果再深入，还需要了解sun.misc.Unsafe、CAS、内存可见性、JMM重排序等。</p>
-<h2 id="Java并发包概述"><a href="#Java并发包概述" class="headerlink" title="Java并发包概述"></a>Java并发包概述</h2><h3 id="java-util-concurrent-atomic"><a href="#java-util-concurrent-atomic" class="headerlink" title="java.util.concurrent.atomic"></a>java.util.concurrent.atomic</h3><p>主要为线程安全的原子性类,Atomic开头，如AtomicInteger</p>
-<h3 id="java-util-concurrent-locks"><a href="#java-util-concurrent-locks" class="headerlink" title="java.util.concurrent.locks"></a>java.util.concurrent.locks</h3><p>锁，最主要的是AbstractQueuedSynchronizer这个抽象类，另外是ReentrantLock、ReentrantReadWriteLock等用于实现锁的类</p>
-<h3 id="java-util-concurrent"><a href="#java-util-concurrent" class="headerlink" title="java.util.concurrent.*"></a>java.util.concurrent.*</h3><p>多线程的工具类，可以分为以下几类:</p>
-<blockquote>
-<p>1、如 ConcurrentHashMap、ArrayBlockingQueue、ConcurrentLinkedQueue等;<br>2、线程池相关，如ThreadPoolExecutor;<br>3、多线程协作的并发类，如FutureTask、CountDownLatch、CyclicBarrier等</p>
-</blockquote>
-<h2 id="Java并发包类层次关系"><a href="#Java并发包类层次关系" class="headerlink" title="Java并发包类层次关系"></a>Java并发包类层次关系</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TODO 待续</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://differ-work.github.io/java-cryptography/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sigh differ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/css/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="梦里键指如飞">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/java-cryptography/" itemprop="url">Java加解密技术</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-08T00:52:59+08:00">
-                2018-09-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>TODO</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -637,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/programing-tool-list/" itemprop="url">编程工具及插件</a></h1>
+          <h1 class="post-title" itemprop="name headline">编程工具及插件</h1>
         
 
         <div class="post-meta">
@@ -689,9 +299,7 @@
       
 
       
-        
-          
-            <p>我工作中主要用到Java、Shell，以及后来由于工作需要不得不用的JavaScript，偶尔也会用到Python处理一些脚本性的东西。</p>
+        <p>我工作中主要用到Java、Shell，以及后来由于工作需要不得不用的JavaScript，偶尔也会用到Python处理一些脚本性的东西。</p>
 <p>在开发的时候，听说过Google style之后，都会将tab制表符换成两个空格，这个对我来说已成惯例。</p>
 <blockquote>
 <ol>
@@ -748,8 +356,6 @@
 <h3 id="Anonymous-Pro"><a href="#Anonymous-Pro" class="headerlink" title="Anonymous Pro"></a>Anonymous Pro</h3><p>以前在Eclipse中用，字体整体比较细，略有尖锐的感觉，看上去比较显眼。</p>
 <p>=============== 以下无正文 ==============</p>
 
-          
-        
       
     </div>
     
@@ -766,12 +372,28 @@
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/java-cryptography/" rel="prev" title="Java加解密技术">
+                Java加解密技术 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -781,10 +403,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -792,6 +415,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -812,8 +439,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -857,6 +493,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#IDE-–-IntelliJ-Idea"><span class="nav-number">1.</span> <span class="nav-text">IDE – IntelliJ Idea</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本编辑器-–-Vim-MacVim-、Atom"><span class="nav-number">2.</span> <span class="nav-text">文本编辑器 – Vim(MacVim)、Atom</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Vim"><span class="nav-number">2.1.</span> <span class="nav-text">Vim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Atom"><span class="nav-number">2.2.</span> <span class="nav-text">Atom</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Atom让我喜欢的地方"><span class="nav-number">2.2.1.</span> <span class="nav-text">Atom让我喜欢的地方</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#我的Atom插件"><span class="nav-number">2.2.2.</span> <span class="nav-text">我的Atom插件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shell"><span class="nav-number">3.</span> <span class="nav-text">Shell</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#终端-iTerm2"><span class="nav-number">3.1.</span> <span class="nav-text">终端 - iTerm2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell-zsh"><span class="nav-number">3.2.</span> <span class="nav-text">Shell - zsh</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mtux"><span class="nav-number">3.3.</span> <span class="nav-text">mtux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Solarized-Dark主题"><span class="nav-number">3.4.</span> <span class="nav-text">Solarized Dark主题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码管理-–-git"><span class="nav-number">4.</span> <span class="nav-text">代码管理 – git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编程字体"><span class="nav-number">5.</span> <span class="nav-text">编程字体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SourceCodePro"><span class="nav-number">5.1.</span> <span class="nav-text">SourceCodePro</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mplus-m"><span class="nav-number">5.2.</span> <span class="nav-text">mplus(m+)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Anonymous-Pro"><span class="nav-number">5.3.</span> <span class="nav-text">Anonymous Pro</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -990,6 +642,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
