@@ -229,6 +229,186 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://differ-work.github.io/java-thread-brief/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sigh differ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/css/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梦里键指如飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/java-thread-brief/" itemprop="url">Java线程</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-17T17:16:16+08:00">
+                2018-11-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="线程状态及转换"><a href="#线程状态及转换" class="headerlink" title="线程状态及转换"></a>线程状态及转换</h2><p><img src="../diagram/java.lang.Thread/java-thread-state.png" alt="java线程状态图"></p>
+<h2 id="Java线程相关的方法"><a href="#Java线程相关的方法" class="headerlink" title="Java线程相关的方法"></a>Java线程相关的方法</h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>定义所在类/接口</th>
+<th>作用</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>run</td>
+<td><code>java.lang.Runnable</code></td>
+<td>启动线程，之后线程状态变为<code>可运行</code>,等待CPU调度</td>
+<td>抽象方法，实现类实现，线程运行的代码块</td>
+</tr>
+<tr>
+<td>start</td>
+<td><code>java.lang.Thread</code></td>
+<td>同<code>run</code>方法</td>
+<td>调用 <code>new Thread( target:RunnableImpl)</code>指定的target的<code>run</code>方法</td>
+</tr>
+<tr>
+<td>sleep</td>
+<td><code>java.lang.Thread</code></td>
+<td>休眠指定时间(<code>millis</code>), 出让CPU使用权</td>
+<td>不会释放锁资源(<code>monitor</code>)</td>
+</tr>
+<tr>
+<td>join</td>
+<td><code>java.lang.Thread</code></td>
+<td>等待(如指定时间，则最多等待这么多时间)指定线程退出</td>
+<td>内部调用 <code>java.lang.Object.wait()</code>方法</td>
+</tr>
+<tr>
+<td>yield</td>
+<td><code>java.lang.Thread</code></td>
+<td>与<code>sleep</code>类似，只在不低于该线程优先级的线程才可执行</td>
+<td>不可指定时间</td>
+</tr>
+<tr>
+<td>wait</td>
+<td><code>java.lang.Object</code></td>
+<td>使当前线程休眠一段时间直到其他线程调用<code>notify</code>/<code>notifyAll</code></td>
+<td>必须在<code>synchronized</code>块中使用，之后进程状态为<code>等待</code>或<code>计时等待</code></td>
+</tr>
+<tr>
+<td>notify</td>
+<td><code>java.lang.Object</code></td>
+<td>唤起等待队列中(<code>等待</code>或<code>计时等待</code>)线程以获取当前锁对象(<code>monitor</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td>notifyAll</td>
+<td><code>java.lang.Object</code></td>
+<td>唤起所有等待队列中的线程</td>
+<td>后续具体哪个被唤起的线程可执行，取决于CPU调度</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://differ-work.github.io/spring-boot-start-flow-base-v1-5-4/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -918,7 +1098,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
